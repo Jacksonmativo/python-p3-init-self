@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-from person import Person
+from lib.person import Person
+
 
 class TestPerson:
     '''Person in person.py'''
@@ -8,7 +9,8 @@ class TestPerson:
     def test_is_class(self):
         '''is a class with the name "Person"'''
         guido = Person("Guido")
-        assert(type(guido) == Person)
+        assert (type(guido) == Person)
+
 
 class TestInit:
     '''Person.__init__ in person.py'''
@@ -16,4 +18,4 @@ class TestInit:
     def test_saves_self_name(self):
         '''takes a name as an argument and saves it to self.name'''
         guido = Person("Guido")
-        assert(guido.name == "Guido")
+        assert (guido.name == "Guido")
